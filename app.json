@@ -15,11 +15,19 @@
    "addons": [
       {
          "options": {
-            "version": "12"
+            "version": "13"
          },
          "plan": "heroku-postgresql"
       }
    ],
+   "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],  
    "env": {
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
