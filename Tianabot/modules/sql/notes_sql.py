@@ -3,7 +3,7 @@ import threading
 
 from Tianabot.modules.helper_funcs.msg_types import Types
 from Tianabot.modules.sql import BASE, SESSION
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
+from sqlalchemy import Boolean, Column, BigInteger, String, UnicodeText, distinct, func
 
 
 class Notes(BASE):
@@ -29,7 +29,7 @@ class Notes(BASE):
 
 class Buttons(BASE):
     __tablename__ = "note_urls"
-    id = Column(Integer, primary_key=True, autoincrement=True)
+    id = Column(BigInteger, primary_key=True, autoincrement=True)
     chat_id = Column(String(14), primary_key=True)
     note_name = Column(UnicodeText, primary_key=True)
     name = Column(UnicodeText, nullable=False)
