@@ -1,4 +1,4 @@
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
+from sqlalchemy import Boolean, Column, BigInteger, String, UnicodeText
 from Tianabot.modules.sql import BASE, SESSION
 
 
