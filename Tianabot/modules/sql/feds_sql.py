@@ -1,6 +1,6 @@
 import threading
 from Tianabot.modules.sql import BASE, SESSION
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
+from sqlalchemy import Boolean, Column, BigInteger, String, UnicodeText
 
 
 class Federations(BASE):
@@ -41,7 +41,7 @@ class BansF(BASE):
     last_name = Column(UnicodeText)
     user_name = Column(UnicodeText)
     reason = Column(UnicodeText, default="")
-    time = Column(Integer, default=0)
+    time = Column(BigInteger, default=0)
 
     def __init__(self, fed_id, user_id, first_name, last_name, user_name, reason, time):
         self.fed_id = fed_id
@@ -55,7 +55,7 @@ class BansF(BASE):
 
 class FedsUserSettings(BASE):
     __tablename__ = "feds_settings"
-    user_id = Column(Integer, primary_key=True)
+    user_id = Column(BigInteger, primary_key=True)
     should_report = Column(Boolean, default=True)
 
     def __init__(self, user_id):
