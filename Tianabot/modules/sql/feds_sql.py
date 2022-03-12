@@ -2,7 +2,6 @@ import threading
 from Tianabot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, BigInteger, String, UnicodeText
 
-
 class Federations(BASE):
     __tablename__ = "feds"
     owner_id = Column(String(14))
