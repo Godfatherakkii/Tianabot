@@ -3,7 +3,6 @@ import threading
 from Tianabot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, BigInteger, String, UnicodeText, distinct, func
 
-
 class StickersFilters(BASE):
     __tablename__ = "blacklist_stickers"
     chat_id = Column(String(14), primary_key=True)
