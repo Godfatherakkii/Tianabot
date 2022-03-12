@@ -5,7 +5,6 @@ from Tianabot.modules.helper_funcs.msg_types import Types
 from Tianabot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, BigInteger, String, UnicodeText, distinct, func
 
-
 class Notes(BASE):
     __tablename__ = "notes"
     chat_id = Column(String(14), primary_key=True)

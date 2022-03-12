@@ -160,6 +160,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "Bond. {first} Bond.",
     "Come with me if you want to live",
 ]
+
 DEFAULT_GOODBYE_MESSAGES = [
     "{first} will be missed.",
     "{first} just went offline.",

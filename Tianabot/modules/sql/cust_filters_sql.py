@@ -5,7 +5,6 @@ from sqlalchemy import Column, String, UnicodeText, Boolean, BigInteger, distinc
 from Tianabot.modules.helper_funcs.msg_types import Types
 from Tianabot.modules.sql import BASE, SESSION
 
-
 class CustomFilters(BASE):
     __tablename__ = "cust_filters"
     chat_id = Column(String(14), primary_key=True)

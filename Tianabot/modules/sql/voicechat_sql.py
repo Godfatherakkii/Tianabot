@@ -1,7 +1,6 @@
 from sqlalchemy import Boolean, Column, BigInteger, String, UnicodeText
 from Tianabot.modules.sql import BASE, SESSION
 
-
 class Talkmode(BASE):
     __tablename__ = "talkmode"
     chat_id = Column(String(14), primary_key=True)
@@ -11,7 +10,6 @@ class Talkmode(BASE):
 
 
 Talkmode.__table__.create(checkfirst=True)
-
 
 def add_talkmode(chat_id: str):
     talkmoddy = Talkmode(str(chat_id))

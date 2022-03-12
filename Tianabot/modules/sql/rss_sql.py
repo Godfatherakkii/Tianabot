@@ -3,7 +3,6 @@ import threading
 from Tianabot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, BigInteger, UnicodeText
 
-
 class RSS(BASE):
     __tablename__ = "rss_feed"
     id = Column(BigInteger, primary_key=True)

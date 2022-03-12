@@ -75,3 +75,4 @@ opencv-python-headless
 img2pdf
 multicolorcaptcha
 youtube-search
+

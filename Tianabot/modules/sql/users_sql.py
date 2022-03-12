@@ -12,7 +12,6 @@ from sqlalchemy import (
     func,
 )
 
-
 class Users(BASE):
     __tablename__ = "users"
     user_id = Column(BigInteger, primary_key=True)

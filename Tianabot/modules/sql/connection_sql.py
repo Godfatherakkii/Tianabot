@@ -6,7 +6,6 @@ from sqlalchemy import Column, String, Boolean, UnicodeText, BigInteger
 
 from Tianabot.modules.sql import SESSION, BASE
 
-
 class ChatAccessConnectionSettings(BASE):
     __tablename__ = "access_connection"
     chat_id = Column(String(14), primary_key=True)
