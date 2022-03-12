@@ -4,7 +4,6 @@ from Tianabot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, BigInteger, String, UnicodeText, distinct, func
 from sqlalchemy.dialects import postgresql
 
-
 class Warns(BASE):
     __tablename__ = "warns"
 
