@@ -14,7 +14,7 @@ class Notes(BASE):
     file = Column(UnicodeText)
     is_reply = Column(Boolean, default=False)
     has_buttons = Column(Boolean, default=False)
-    msgtype = Column(Integer, default=Types.BUTTON_TEXT.value)
+    msgtype = Column(BigInteger, default=Types.BUTTON_TEXT.value)
 
     def __init__(self, chat_id, name, value, msgtype, file=None):
         self.chat_id = str(chat_id)  # ensure string
