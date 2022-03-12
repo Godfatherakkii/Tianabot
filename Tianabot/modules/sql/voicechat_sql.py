@@ -11,7 +11,6 @@ class Talkmode(BASE):
 
 Talkmode.__table__.create(checkfirst=True)
 
-
 def add_talkmode(chat_id: str):
     talkmoddy = Talkmode(str(chat_id))
     SESSION.add(talkmoddy)
