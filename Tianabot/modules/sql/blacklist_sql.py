@@ -4,7 +4,6 @@ from sqlalchemy import func, distinct, Column, String, UnicodeText, BigInteger
 
 from Tianabot.modules.sql import SESSION, BASE
 
-
 class BlackListFilters(BASE):
     __tablename__ = "blacklist"
     chat_id = Column(String(14), primary_key=True)
