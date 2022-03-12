@@ -23,7 +23,6 @@ class BlackListFilters(BASE):
             and self.trigger == other.trigger
         )
 
-
 class BlacklistSettings(BASE):
     __tablename__ = "blacklist_settings"
     chat_id = Column(String(14), primary_key=True)
