@@ -3,7 +3,6 @@ import threading
 from Tianabot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, BigInteger, UnicodeText
 
-
 class UserInfo(BASE):
     __tablename__ = "userinfo"
     user_id = Column(BigInteger, primary_key=True)
