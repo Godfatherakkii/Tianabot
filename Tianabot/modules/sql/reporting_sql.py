@@ -4,7 +4,6 @@ from typing import Union
 from Tianabot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, BigInteger, String
 
-
 class ReportingUserSettings(BASE):
     __tablename__ = "user_report_settings"
     user_id = Column(BigInteger, primary_key=True)
