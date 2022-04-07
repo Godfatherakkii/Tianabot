@@ -504,7 +504,7 @@ Nᴏᴛᴇ-  ɴɪɢʜᴛ  ᴍᴏᴅᴇ  ᴄʜᴀᴛs  ɢᴇᴛ  ᴀᴜᴛᴏᴍ�
 *NOTE:* Terms and Conditions might change anytime
 
 *Updates Channel:* @{UPDATE_CHANNEL}
-*Support Chat:* @{SUPPORT_GROUP}""",
+*Support Chat:* @{SUPPORT_CHAT}""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
