@@ -534,14 +534,19 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
         )
     elif query.data == "tiana_music":
         query.message.edit_text(
-            text=f"✗ *Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Aꜱꜱɪꜱᴛᴀɴᴛ」 Mᴏᴅᴜʟᴇ:*"
+            text=f"""✗ *Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Aꜱꜱɪꜱᴛᴀɴᴛ」 Mᴏᴅᴜʟᴇ:*
             
-            f"\n\n1.) first, add me to your group."
-            f"\n\n2.) then promote me as admin and give all permissions except anonymous admin."
-            f"\n\n3.) add @{ASS_USERNAME} to your group."
-            f"\n\n4.) turn on the video chat first before start to play music."
-            f"\n\n*✗ Lets Enjoy The Tiana Music And Join Support Group @PrincexSupport*"
-            f"\n\n*✗ Pᴏᴡᴇʀᴇᴅ Bʏ:* @{UPDATE_CHANNEL}",
+1.) first, add me to your group.
+            
+2.) then promote me as admin and give all permissions except anonymous admin.
+            
+3.) add @{ASS_USERNAME} to your group.
+            
+4.) turn on the video chat first before start to play music.
+            
+*✗ Lets Enjoy Music Bot And Join Support Group @{SUPPORT_CHAT}*
+            
+*✗ Pᴏᴡᴇʀᴇᴅ Bʏ:* @{UPDATE_CHANNEL}""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
