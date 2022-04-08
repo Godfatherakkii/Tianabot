@@ -378,7 +378,7 @@ def tiana_callback_handler(update, context):
                     [InlineKeyboardButton(text="𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚 𝙈𝙚 ❓", callback_data="tiana_help"),
                      InlineKeyboardButton(text="𝙈𝙪𝙨𝙞𝙘 𝘽𝙤𝙩 🎧", callback_data="tiana_music")],
                     [InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_back"),
-                     InlineKeyboardButton(text="𝙁𝙪𝙣 𝙏𝙤𝙤𝙡𝙨 ⚙", callback_data="tiana_tools")],
+                     InlineKeyboardButton(text="𝙄𝙣𝙡𝙞𝙣𝙚 🔗", switch_inline_query_current_chat="")],
                 ]
             ),
         )
