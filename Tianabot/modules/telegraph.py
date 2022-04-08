@@ -8,7 +8,7 @@ TMP_DOWNLOAD_DIRECTORY = "./"
 
 from PIL import Image
 from datetime import datetime
-from Tianabot import Telegraph, upload_file, exceptions
+from telegraph import Telegraph, upload_file, exceptions
 
 
 wibu = "Tianabot"
