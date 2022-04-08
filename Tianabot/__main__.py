@@ -99,7 +99,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="👩‍💻 𝙄𝙣𝙛𝙤", callback_data="about_"),
-        InlineKeyboardButton(text="𝘿𝙤𝙣𝙖𝙩𝙚 💰", url="https://t.me/PrincexDonateBot"),
+        InlineKeyboardButton(text="𝙊𝙬𝙣𝙚𝙧 👨‍✈️", url=f"https://t.me/{OWNER_USERNAME}"),
     ],
    [
         InlineKeyboardButton(text="📇 𝙐𝙥𝙙𝙖𝙩𝙚𝙨", url=f"http://t.me/{UPDATE_CHANNEL}"),
@@ -251,7 +251,7 @@ def start(update: Update, context: CallbackContext):
                     sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(
                  [
-                  [InlineKeyboardButton(text="📄 Source", callback_data="tiana_source"), 
+                  [InlineKeyboardButton(text="📄 Source", url="https://github.com/prince-botz/tianabot"), 
                    InlineKeyboardButton(text="🫂 Support", url=f"https://t.me/{SUPPORT_CHAT}")]
                  ]
               ),
@@ -378,7 +378,7 @@ def tiana_callback_handler(update, context):
                     [InlineKeyboardButton(text="𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚 𝙈𝙚 ❓", callback_data="tiana_help"),
                      InlineKeyboardButton(text="𝙈𝙪𝙨𝙞𝙘 𝘽𝙤𝙩 🎧", callback_data="tiana_music")],
                     [InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_back"),
-                     InlineKeyboardButton(text="𝙁𝙪𝙣 𝙏𝙤𝙤𝙡𝙨 ⚙", callback_data="tiana_tools")],
+                     InlineKeyboardButton(text="𝙄𝙣𝙡𝙞𝙣𝙚 🔗", switch_inline_query_current_chat="")],
                 ]
             ),
         )
@@ -719,111 +719,6 @@ Support
                 ]
             ),
         )
-    elif query.data == "tiana_tools":
-        query.message.edit_text(
-            text="""*Here is the help for the tools module:
-We promise to keep you latest up-date with the latest technology on telegram. 
-we updradge TianaBot everyday to simplifie use of telegram and give a better exprince to users.
-
-Click on below buttons and check amazing tools for users.*""",
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Sᴇᴀʀᴄʜ", callback_data="tiana_toola"),
-                    InlineKeyboardButton(text="Tᴀɢᴀʟʟ", callback_data="tiana_toolb"),
-                    InlineKeyboardButton(text="Kᴀʀᴍᴀ", callback_data="tiana_toolc"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Fᴏɴᴛ Gᴇɴ", callback_data="tiana_toold"),
-                    InlineKeyboardButton(text="Pᴀꜱᴛᴇ", callback_data="tiana_toole"),
-                    InlineKeyboardButton(text="Tᴇʟᴇɢʀᴀᴘʜ", callback_data="tiana_toolf"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_"),
-                 
-                 ]
-                ]
-            ),
-        )
-    elif query.data == "tiana_toola":
-        query.message.edit_text(
-            text="""「 Hᴇʟᴘ ᴏғ Sᴇᴀʀᴄʜ 」:
-
- ❍ /google text: Perform a google search
- ❍ /img text: Search Google for images and returns them
- ❍ /app appname: Searches for an app in Play Store and returns its details.
- ❍ /reverse: Does a reverse image search of the media which it was replied to.""",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_tools")]]
-            ),
-        )
-    elif query.data == "tiana_toolb":
-        query.message.edit_text(
-            text="""「 Hᴇʟᴘ ᴏғ Tᴀɢᴀʟʟ 」:
-
- ❍ /tagall or @all '(reply to message or add another message) To mention all members in your group, without exception.
-
-Note- Only admins can Use Tagall Command.""",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_tools")]]
-            ),
-        )
-    elif query.data == "tiana_toolc":
-        query.message.edit_text(
-            text="""「 Hᴇʟᴘ ᴏғ Kᴀʀᴍᴀ 」:
-
-UPVOTE - Use upvote keywords like "+", "+1", "thanks" etc to upvote a cb.message.
-DOWNVOTE - Use downvote keywords like "-", "-1", etc to downvote a cb.message.
-
-- /karma ON/OFF: Enable/Disable karma in group. 
-- /karma Reply to a message: Check user's karma
-- /karma: Chek karma list of top 10 users""",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_tools")]]
-            ),
-        )
-    elif query.data == "tiana_toold":
-        query.message.edit_text(
-            text="""「 Hᴇʟᴘ ᴏғ Fᴏɴᴛ Gᴇɴ 」:
-
- - /weebify text: weebify your text!
- - /bis text: bold your text!
- - /bi text: bold-italic your text!
- - /tiny text: tiny your text!
- - /fsquare text: square-filled your text!
- - /blue text: bluify your text!
- - /latin text: latinify your text!
- - /lined text: lined your text!""",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_tools")]]
-            ),
-        )
-    elif query.data == "tiana_toole":
-        query.message.edit_text(
-            text="""「 Hᴇʟᴘ ᴏғ Pᴀꜱᴛᴇ 」:
-
- ❍ /paste: Saves replied content to replies with a url""",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_tools")]]
-            ),
-        )
-    elif query.data == "tiana_toolf":
-        query.message.edit_text(
-            text="""「 Hᴇʟᴘ ᴏғ Tᴇʟᴇɢʀᴀᴘʜ 」:
-
- ❍ /tm :Get Telegraph Link Of Replied Media
- ❍ /txt :Get Telegraph Link of Replied Text""",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_tools")]]
-            ),
-        )
     elif query.data == "tiana_source":
         query.message.edit_text(
             text="""*Tianabot is Now Open Source Bot Project.*
@@ -833,8 +728,9 @@ DOWNVOTE - Use downvote keywords like "-", "-1", etc to downvote a cb.message.
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", url="github.com/Prince-Botz/Tianabot"),
-                 ]
+                    InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", url="github.com/Prince-Botz/Tianabot"),                 
+                    InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_"),
+                 ]    
                 ]
             ),
         )
