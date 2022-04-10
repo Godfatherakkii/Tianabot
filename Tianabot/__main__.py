@@ -543,7 +543,7 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
             
 4.) turn on the video chat first before start to play music.
             
-*Lets Enjoy Music Bot And Join Support Group""",
+*Lets Enjoy Music Bot And Join Support Group*""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
