@@ -24,7 +24,7 @@ async def repo(_, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="📄 Source", callback_data="tiana_source"), 
+                    InlineKeyboardButton(text="📄 Source", url="https://github.com/prince-botz/tianabot"), 
                     InlineKeyboardButton(
                         "🫂 Support", url=f"https://t.me/{SUPPORT_CHAT}")
                 ]
