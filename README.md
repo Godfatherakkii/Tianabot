@@ -94,5 +94,4 @@ Distributed under the [GNU General Public License v3.0 License.](https://github.
 
 Special thanks to these amazing projects/people which/who help power Tiana Bot:
 
-- [Prince](https://t.me/NoobxCoder) 
-- [Blaze](https://t.me/PiroxPower)
+- [Prince](https://t.me/NoobxCoder)
