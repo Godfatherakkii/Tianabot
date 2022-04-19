@@ -106,8 +106,8 @@ if ENV:
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
     IBM_WATSON_CRED_PASSWORD = os.environ.get("IBM_WATSON_CRED_PASSWORD", None)
-    ARQ_API_URL = "https://thearq.tech"
-    ARQ_API_KEY = os.environ.get("ARQ_API_KEY", None)
+    ARQ_API_URL = "https://arq.hamker.in"
+    ARQ_API_KEY = "CIIUHX-TKZMEQ-LPZFEQ-ZUUFJO-ARQ"    
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     SUPPORT_GROUP = SUPPORT_CHAT
     try:
