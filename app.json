@@ -56,8 +56,8 @@
       },
       "BOT_ID": {
          "description": "Your bot ID.. Use any other bot to get it.",
-         "required": false,
-         "value": "1836395711"
+         "required": True,
+         "value": ""
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
@@ -125,7 +125,7 @@
       },      
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
-         "required": false,
+         "required": True,
          "value": ""
       },
       "STRICT_GBAN": {
