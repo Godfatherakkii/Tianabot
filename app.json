@@ -1,6 +1,6 @@
 {
       "name": "Tiana Bot",
-      "logo": "https://telegra.ph/file/fae3dd2a2c6e491e4893e.jpg",
+      "logo": "https://te.legra.ph/file/5f575d5b4a1d019ae2864.png",
       "description": "A Telegram Powerfull Group Managment Bot written in Python using Pyrogram and Telethon",
       "keywords": [
          "telegram",
@@ -56,8 +56,8 @@
       },
       "BOT_ID": {
          "description": "Your bot ID.. Use any other bot to get it.",
-         "required": false,
-         "value": "1836395711"
+         "required": true,
+         "value": ""
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
@@ -125,7 +125,7 @@
       },      
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
-         "required": false,
+         "required": true,
          "value": ""
       },
       "STRICT_GBAN": {
