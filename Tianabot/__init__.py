@@ -10,6 +10,10 @@ from pymongo import MongoClient
 from telethon import TelegramClient
 from Python_ARQ import ARQ
 from aiohttp import ClientSession
+from pyrogram.types import Message
+from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid, ChannelInvalid
+from pyrogram.types import Chat, User
+from inspect import getfullargspec
 
 StartTime = time.time()
 
@@ -29,6 +33,15 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
         "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot quitting."
     )
     quit(1)
+
+async def eor(msg: Message, **kwargs):
+    func = (
+        (msg.edit_text if msg.from_user.is_self else msg.reply)
+        if msg.from_user
+        else msg.reply
+    )
+    spec = getfullargspec(func.__wrapped__).args
+    return await func(**{k: v for k, v in kwargs.items() if k in spec})
 
 ENV = bool(os.environ.get("ENV", False))
 aiohttpsession = ClientSession()
