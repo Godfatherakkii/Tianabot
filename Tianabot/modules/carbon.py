@@ -2,7 +2,6 @@ from pyrogram.types import Message
 from pyrogram import filters
 from Tianabot import pbot
 from Tianabot.utils.errors import capture_err
-from Tianabot.utils.functions import make_carbon
 from asyncio import gather
 from io import BytesIO
 from Tianabot import aiohttpsession as aiosession
