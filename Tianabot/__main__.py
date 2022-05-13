@@ -82,9 +82,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hᴇʟʟᴏ {} * [!]({})
+*Hello {} * [!]({})
 ───────────────────────
-× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
+× *I'ᴍ Am-Eren Yeager Group Management Bot*
 × *I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
 ───────────────────────
 × *Uᴘᴛɪᴍᴇ:* `{}`
@@ -233,9 +233,9 @@ def start(update: Update, context: CallbackContext):
     else:
           first_name = update.effective_user.first_name
           update.effective_message.reply_photo(
-                TIANA_IMG, caption="""*Hᴇʟʟᴏ {} !*
+                TIANA_IMG, caption="""*Hello {} !*
 ───────────────────
-× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
+× *I'ᴍ Am-Eren Yeager Group Management Bot*
 × *I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
 ───────────────────
 × *Uᴘᴛɪᴍᴇ:* `{}`
@@ -556,7 +556,7 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
         query.message.edit_text(
             text="""✗*Here is the help for Play Commands*:
 
-*Note*: Tiana Music Bot works on a single merged commands for Music and Video
+*Note*: Eren Yeager Music Bot works on a single merged commands for Music and Video
 
 ✗ *Youtube and Telegram Files*:
 
@@ -564,7 +564,7 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
 - Stream Video or Music on Voice Chat by selecting inline Buttons you get
 
 
-✗ *Tiana Database Saved Playlists*:
+✗ *Eren Yeager Database Saved Playlists*:
 
 /createplaylist
 - Create Your Playlist on Tiana's Server with Custom Name
@@ -576,7 +576,7 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
 - Delete any saved music in your playlist
 
 /playplaylist 
-- Start playing Your Saved Playlist on Tiana Servers.""",
+- Start playing Your Saved Playlist On Eren Servers.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -717,7 +717,7 @@ Support
         )
     elif query.data == "tiana_source":
         query.message.edit_text(
-            text="""*Tianabot is Now Open Source Bot Project.*
+            text="""*Eren Yeager Bot is Now Open Source Bot Project.*
 
 *Click below Button to Get Source Code.*""",
             parse_mode=ParseMode.MARKDOWN,
