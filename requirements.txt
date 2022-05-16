@@ -38,7 +38,7 @@ cachetools
 ujson
 pretty_errors
 TgCrypto
-Pyrogram
+PyroGram==1.4.15
 youtube-dl
 youtube_search
 asyncio
