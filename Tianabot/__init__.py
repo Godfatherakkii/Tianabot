@@ -8,6 +8,7 @@ import telegram.ext as tg
 from pyrogram import Client, errors
 from pymongo import MongoClient
 from telethon import TelegramClient
+from telethon.sessions import MemorySession
 from Python_ARQ import ARQ
 from aiohttp import ClientSession
 from pyrogram.types import Message
@@ -223,7 +224,7 @@ else:
         LOGGER.warning("Can't connect to SpamWatch!")
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("masha", API_ID, API_HASH)
+telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
 pbot = Client("mashapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 mongo_client = MongoClient(MONGO_DB_URI)
 db = mongo_client.SaitamaRobot
