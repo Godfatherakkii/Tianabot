@@ -105,6 +105,6 @@ async def chatbot_talk(_, message: Message):
         merissaurl = requests.get(
             f"https://merissachatbot.tk/api/apikey={token}/{botname}/{owner}/message={text}"
         )
-        textmsg = merissaurl.json()["message"]
+        textmsg = merissaurl.json()["reply"]
         msg = tr.translate(textmsg, src="en", dest=lang)
         await message.reply_text(msg.text)
