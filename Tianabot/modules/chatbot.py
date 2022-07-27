@@ -103,7 +103,7 @@ async def chatbot_talk(_, message: Message):
         ).replace(" ", "%20")
         text = trtoen.replace(" ", "%20") if len(message.text) < 2 else trtoen
         merissaurl = requests.get(
-            f"https://merissachatbot.tk/api?message={text}&botname=merissa&ownername=Prince"
+            f"https://merissachatbot.tk/api/apikey={token}/{botname}/{owner}/message={text}"
         )
         textmsg = merissaurl.json()["message"]
         msg = tr.translate(textmsg, src="en", dest=lang)
