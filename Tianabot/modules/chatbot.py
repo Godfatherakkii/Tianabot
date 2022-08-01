@@ -360,7 +360,7 @@ def list_all_chats(update: Update, context: CallbackContext):
     update.effective_message.reply_text(text, parse_mode="HTML")
 
 
-__mod_name__ = ""
+__mod_name__ = "Cʜᴀᴛ-Bᴏᴛ"
 __help__ = """
 Merissa AI ChatBot is the only ai system which can detect & reply upto 200 language's
 
